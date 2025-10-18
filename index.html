@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ohana — Support</title>
+
+  <!-- Social / SEO -->
+  <meta name="description" content="Ohana support: help, contact, FAQs, and policies." />
+  <meta property="og:title" content="Ohana — Support" />
+  <meta property="og:description" content="Get help with Ohana. Contact support, read FAQs, and view policies." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/USERNAME/ohana-support/main/og-image.png" />
+  <meta name="theme-color" content="#0f172a" />
+
+  <style>
+    :root{
+      --bg:#0b1020;           /* deep navy */
+      --card:#111827;         /* slate-900 */
+      --muted:#9ca3af;        /* gray-400 */
+      --text:#f8fafc;         /* slate-50 */
+      --brand:#06b6d4;        /* cyan-500 */
+      --brand-2:#14b8a6;      /* teal-500 */
+      --border:#1f2937;       /* slate-800 */
+      --ok:#10b981;
+      --warn:#f59e0b;
+      --link:#7dd3fc;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at 100% -10%, rgba(20,184,166,.12), transparent 50%),
+        radial-gradient(1000px 500px at -10% 0%, rgba(6,182,212,.12), transparent 50%),
+        linear-gradient(180deg, #0b1224, #0b1020);
+      line-height:1.55;
+    }
+    a{color:var(--link); text-decoration:none}
+    a:hover{opacity:.9; text-decoration:underline}
+    .wrap{max-width:980px; margin:0 auto; padding:28px 20px 64px}
+    header{
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+      padding:10px 0 24px; border-bottom:1px solid var(--border);
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px; font-weight:700; letter-spacing:.3px;
+    }
+    .logo{
+      width:40px; height:40px; border-radius:12px;
+      background: conic-gradient(from 180deg, var(--brand), var(--brand-2), var(--brand));
+      box-shadow: 0 8px 30px rgba(6,182,212,.25);
+    }
+    .tag{color:var(--muted); font-size:.9rem}
+    .hero{
+      display:grid; grid-template-columns:1fr; gap:18px; margin:24px 0 14px;
+    }
+    .hero h1{margin:0; font-size:clamp(1.6rem, 3.5vw, 2.2rem)}
+    .hero p{margin:0; color:var(--muted)}
+    .cards{display:grid; grid-template-columns:1fr; gap:16px; margin-top:20px}
+    @media (min-width:860px){ .cards{grid-template-columns:1fr 1fr} }
+    .card{
+      background:rgba(17,24,39,.55);
+      border:1px solid var(--border);
+      border-radius:14px; padding:18px 18px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+    .card h3{margin:0 0 8px}
+    .kvs{display:grid; gap:8px; margin-top:8px}
+    .kv{display:flex; justify-content:space-between; gap:12px; padding:10px 0; border-top:1px dashed var(--border)}
+    .kv:first-child{border-top:none; padding-top:0}
+    .small{font-size:.95rem; color:var(--muted)}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:11px 14px; border-radius:10px; font-weight:600;
+      background:linear-gradient(90deg, var(--brand), var(--brand-2));
+      color:#001018; border:none;
+      box-shadow:0 6px 20px rgba(20,184,166,.25);
+    }
+    .btn-outline{
+      background:transparent; border:1px solid var(--border); color:var(--text)
+    }
+    details{
+      background:rgba(17,24,39,.55);
+      border:1px solid var(--border);
+      border-radius:12px; padding:14px 16px; margin:10px 0;
+    }
+    summary{cursor:pointer; font-weight:600}
+    footer{
+      margin-top:40px; padding-top:18px;
+      border-top:1px solid var(--border); color:var(--muted); font-size:.95rem
+    }
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:.95rem}
+    .pill{
+      display:inline-block; font-size:.78rem; padding:6px 10px; border-radius:999px;
+      background:#0b1328; border:1px solid var(--border); color:var(--muted)
+    }
+    .section-title{display:flex; align-items:center; justify-content:space-between; gap:10px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <div>Ohana</div>
+          <div class="tag">Local Experiences • Support</div>
+        </div>
+      </div>
+      <span class="pill">App Version <span class="mono">1.0.0</span></span>
+    </header>
+
+    <section class="hero" aria-label="Support overview">
+      <h1>We’re here to help</h1>
+      <p>Find answers, contact support, and review key policies for the Ohana app.</p>
+    </section>
+
+    <section class="cards" aria-label="Contact and quick help">
+      <div class="card">
+        <h3>Contact Support</h3>
+        <p class="small">Typical response within 24–48 hours (Mon–Fri).</p>
+        <div class="kvs">
+          <div class="kv">
+            <span>Email</span>
+            <a class="mono" href="mailto:ohana.support@gmail.com">ohana.support@gmail.com</a>
+          </div>
+          <div class="kv">
+            <span>Feedback Form</span>
+            <a class="mono" href="https://forms.gle/your-google-form" target="_blank" rel="noopener">Open form</a>
+          </div>
+          <div class="kv">
+            <span>Status</span>
+            <span class="small">All systems normal</span>
+          </div>
+        </div>
+        <p style="margin-top:14px">
+          <a class="btn" href="mailto:ohana.support@gmail.com">Email Support</a>
+          <a class="btn btn-outline" style="margin-left:10px" href="#faq">View FAQs</a>
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="section-title">
+          <h3>Quick Info</h3>
+          <span class="pill">Hawaii • PST/PDT</span>
+        </div>
+        <div class="kvs">
+          <div class="kv">
+            <span>Company</span>
+            <span class="small">Mofako Labs</span>
+          </div>
+          <div class="kv">
+            <span>App</span>
+            <span class="small">Ohana — Local Experiences</span>
+          </div>
+          <div class="kv">
+            <span>Build</span>
+            <span class="mono">iOS • TestFlight</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" style="margin-top:28px">
+      <h3>FAQs</h3>
+      <details>
+        <summary>How do I sign in?</summary>
+        <p class="small">Use Apple, Google, or Email (magic link / one-time code). If you can’t access your email, contact us and we’ll help.</p>
+      </details>
+      <details>
+        <summary>I didn’t receive a verification email.</summary>
+        <p class="small">Check spam/junk. Then tap “Open Mail App” in Ohana. Still stuck? Email us at <a href="mailto:ohana.support@gmail.com">ohana.support@gmail.com</a>.</p>
+      </details>
+      <details>
+        <summary>How do I report an issue with an event or host?</summary>
+        <p class="small">Email details (event name, date, screenshots if possible) to <a href="mailto:ohana.support@gmail.com">ohana.support@gmail.com</a>.</p>
+      </details>
+    </section>
+
+    <section id="policies" style="margin-top:28px">
+      <h3>Policies</h3>
+      <div class="card" style="margin-top:10px">
+        <h4 style="margin:0 0 8px">Privacy Policy</h4>
+        <p class="small">
+          We collect only the data needed to operate Ohana (e.g., account info, RSVP data, and basic analytics).
+          We do not sell personal data. For questions, email <a href="mailto:ohana.support@gmail.com">ohana.support@gmail.com</a>.
+        </p>
+      </div>
+      <div class="card" style="margin-top:10px">
+        <h4 style="margin:0 0 8px">Terms of Use</h4>
+        <p class="small">
+          By using Ohana, you agree to our community guidelines and local laws. Hosts are solely responsible for the events they publish and attest they have the required permissions/permits. Ohana is a platform and does not guarantee event outcomes.
+        </p>
+      </div>
+      <p style="margin-top:10px"><a href="./privacy.html">Privacy Policy</a> · <a href="./terms.html">Terms of Use</a></p>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> Mofako Labs — All rights reserved.</div>
+      <div class="small">This page is provided to support App Store review and end-users. Last updated: <span class="mono">2025-01-29</span></div>
+    </footer>
+  </div>
+
+  <script>
+    // set year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
